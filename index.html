@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="header">
+
+    <h1>Expense Tracker</h1>
+
+  </div>
+  <div id="main-container">
+
+    <div id="flex">
+
+      <div id="set-budget">
+
+        <h3>Set Budget</h3><br>
+        <input type="number" id="budget-value"><br>
+        <button id="set-budget-value" onclick="setBudget()">Set Budget</button>
+
+      </div>
+
+      <div id="set-expense">
+
+        <h3>Expense</h3>
+        <input type="number" id="exp-value">
+        <h3>Description</h3>
+        <input type="text" id="des-value">
+        <h3>Date</h3>
+        <input type="date" id="date-value"><br>
+        <button id="add-exp-value" onclick="addExpense()">Add Expense</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="show-budget">
+    <h4>Total Budget :</h4>
+    <p id="total-budget">00.00 </p>
+    <h4>Remaining Budget :</h4>
+    <p id="remain-budget">00.00 </p>
+  </div>
+
+  <div id="dom-table-1">
+    <table border="1px ">
+      <tr>
+        <th>Description</th>
+        <th>Expense</th>
+        <th>Date</th>
+      </tr>
+    </table>
+  </div>
+
+  <div id="dom-last-container">
+   
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
